@@ -16,30 +16,28 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <StackLayout>
-            <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding ContactsInfo}">
-                <syncfusion:SfListView.ItemTemplate >
-                    <DataTemplate>
-                        <Grid x:Name="grid">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="70" />
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="100" />
-                            </Grid.ColumnDefinitions>
-                            <Image Source="{Binding ContactImage}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"/>
-                            <Grid Grid.Column="1" RowSpacing="1" Padding="10,0,0,0" VerticalOptions="Center">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="25"/>
-                                    <RowDefinition Height="20"/>
-                                </Grid.RowDefinitions>
-                                <Label  LineBreakMode="NoWrap" FontFamily="RobotoMedium" Grid.Row="0" TextColor="{Binding .,Converter={StaticResource ColorConverter},ConverterParameter={x:Reference Name=listView}}" Text="{Binding ContactName}"/>
-                                <Label  Grid.Row="1" FontFamily="RobotoMedium" Grid.Column="0" TextColor="{Binding .,Converter={StaticResource ColorConverter},ConverterParameter={x:Reference Name=listView}}" LineBreakMode="NoWrap" Text="{Binding ContactNumber}"/>
-                            </Grid>
-                            <Label  Grid.Column="2" TextColor="{Binding .,Converter={StaticResource ColorConverter},ConverterParameter={x:Reference Name=listView}}" LineBreakMode="NoWrap" Text="{Binding ContactType}" FontFamily="RobotoMedium" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+        <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding ContactsInfo}">
+            <syncfusion:SfListView.ItemTemplate >
+                <DataTemplate>
+                    <Grid x:Name="grid">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding ContactImage}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"/>
+                        <Grid Grid.Column="1" RowSpacing="1" Padding="10,0,0,0" VerticalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+                            <Label  LineBreakMode="NoWrap" FontFamily="RobotoMedium" Grid.Row="0" TextColor="{Binding .,Converter={StaticResource ColorConverter},ConverterParameter={x:Reference Name=listView}}" Text="{Binding ContactName}"/>
+                            <Label  Grid.Row="1" FontFamily="RobotoMedium" Grid.Column="0" TextColor="{Binding .,Converter={StaticResource ColorConverter},ConverterParameter={x:Reference Name=listView}}" LineBreakMode="NoWrap" Text="{Binding ContactNumber}"/>
                         </Grid>
-                    </DataTemplate>
-                </syncfusion:SfListView.ItemTemplate>
-            </syncfusion:SfListView>
-        </StackLayout>
+                        <Label  Grid.Column="2" TextColor="{Binding .,Converter={StaticResource ColorConverter},ConverterParameter={x:Reference Name=listView}}" LineBreakMode="NoWrap" Text="{Binding ContactType}" FontFamily="RobotoMedium" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
     </ContentPage.Content>
 </ContentPage>
