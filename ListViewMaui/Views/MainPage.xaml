@@ -26,7 +26,6 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="100" />
                             </Grid.ColumnDefinitions>
-                            
                             <Image Source="{Binding ContactImage}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"/>
                             <Grid Grid.Column="1" RowSpacing="1" Padding="10,0,0,0" VerticalOptions="Center">
                                 <Grid.RowDefinitions>
