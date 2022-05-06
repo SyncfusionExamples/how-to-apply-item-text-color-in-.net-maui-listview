@@ -1,2 +1,1 @@
-# how-to-apply-item-text-color-in-.net-maui-listview
-This example demonstrates how to set the text color for listview items in .NET MAUI ListView
+**[View document in Syncfusion .NET MAUI Knowledge Base](https://www.syncfusion.com/kb/13090/how-to-apply-the-item-text-color-in-net-maui-listview-sflistview)**
