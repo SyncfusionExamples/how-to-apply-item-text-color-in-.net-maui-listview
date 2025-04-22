@@ -8,9 +8,5 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void OnCounterClicked(object sender, EventArgs e)
-    {
-
-    }
 }
 
