@@ -25,7 +25,7 @@ namespace ListViewMaui
             {
                 var contact = new Contacts(CustomerNames[i], r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
                 contact.ContactType = contactType[r.Next(0, 5)];
-                contact.ContactImage = ImageSource.FromResource("ListViewMaui.Images.Image" + r.Next(0, 28) + ".png");
+                contact.ContactImage = ImageSource.FromResource("ListViewMaui.Resources.Images.image" + r.Next(0, 28) + ".png");
                 ContactsInfo.Add(contact);
             }
         }
